@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books — DataSphere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">⬡</span><span>DataSphere</span></a>
+    <div class="nav-links">
+      <a href="tutorials.html" class="nav-link">Tutorials</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="videos.html" class="nav-link">Videos</a>
+      <a href="books.html" class="nav-link" style="background:var(--ink-7);font-weight:500">Books</a>
+      <a href="search.html" class="nav-link nav-search-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="tutorials.html">Tutorials</a>
+    <a href="articles.html">Articles</a>
+    <a href="videos.html">Videos</a>
+    <a href="books.html">Books</a>
+    <a href="search.html">Search</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Recommended Books</h1>
+    <p>Hand-picked titles that belong on every computer scientist's shelf.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="content-filters" style="margin-bottom:40px">
+      <button class="filter-btn active" data-group="topic">All Topics</button>
+      <button class="filter-btn" data-group="topic">Algorithms</button>
+      <button class="filter-btn" data-group="topic">Systems</button>
+      <button class="filter-btn" data-group="topic">Machine Learning</button>
+      <button class="filter-btn" data-group="topic">Web Dev</button>
+    </div>
+
+    <div class="books-grid">
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#0d2233,#185fa5)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">Designing Data-Intensive Applications</div>
+            <div class="book-cover-author">Martin Kleppmann</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>Designing Data-Intensive Applications</h4>
+          <p>The definitive guide to distributed systems, storage engines, and reliable data infrastructure.</p>
+          <div class="book-rating">★★★★★ <span>· Advanced · Systems</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#1a0d30,#5b4fcf)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">Introduction to Algorithms (CLRS)</div>
+            <div class="book-cover-author">Cormen, Leiserson, Rivest, Stein</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>Introduction to Algorithms (CLRS)</h4>
+          <p>The canonical algorithms textbook. Rigorous, comprehensive, and used in courses worldwide.</p>
+          <div class="book-rating">★★★★★ <span>· Intermediate · Algorithms</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#0d2418,#0f6e56)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">Hands-On Machine Learning</div>
+            <div class="book-cover-author">Aurélien Géron</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>Hands-On Machine Learning</h4>
+          <p>The best practical introduction to ML with scikit-learn, Keras, and TensorFlow.</p>
+          <div class="book-rating">★★★★★ <span>· Intermediate · ML</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#1a1008,#854f0b)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">You Don't Know JS</div>
+            <div class="book-cover-author">Kyle Simpson</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>You Don't Know JS</h4>
+          <p>Six-volume series exploring JavaScript's most misunderstood and powerful features.</p>
+          <div class="book-rating">★★★★★ <span>· Beginner–Adv · Web Dev</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#1a0a0a,#a32d2d)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">The Art of Computer Programming</div>
+            <div class="book-cover-author">Donald E. Knuth</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>The Art of Computer Programming</h4>
+          <p>Knuth's magnum opus. Four volumes of rigorous algorithmic mathematics and deep CS theory.</p>
+          <div class="book-rating">★★★★★ <span>· Advanced · Algorithms</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#0a1420,#0d7a6b)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">Computer Systems: A Programmer's Perspective</div>
+            <div class="book-cover-author">Bryant & O'Hallaron</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>Computer Systems: A Programmer's Perspective</h4>
+          <p>From bits and bytes to the OS kernel — the book behind CMU's famous CS:APP course.</p>
+          <div class="book-rating">★★★★★ <span>· Intermediate · Systems</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#1a1030,#7b69d4)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">Clean Code</div>
+            <div class="book-cover-author">Robert C. Martin</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>Clean Code</h4>
+          <p>Principles, patterns, and practices for writing readable, maintainable software.</p>
+          <div class="book-rating">★★★★☆ <span>· Intermediate · General</span></div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-cover" style="background:linear-gradient(160deg,#0f1a0a,#3b6d11)">
+          <div class="book-cover-inner">
+            <div class="book-cover-title">Deep Learning</div>
+            <div class="book-cover-author">Goodfellow, Bengio, Courville</div>
+          </div>
+        </div>
+        <div class="book-info">
+          <h4>Deep Learning</h4>
+          <p>The textbook of record for neural networks — theory, math, and architectures from first principles.</p>
+          <div class="book-rating">★★★★★ <span>· Advanced · ML</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">⬡ DataSphere</div>
+      <p>A curated computer science learning hub. Hosted on Azure Static Web Apps.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Content</h5>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="articles.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="books.html">Books</a>
+      </div>
+      <div class="footer-col">
+        <h5>Topics</h5>
+        <a href="tutorials.html?topic=algorithms">Algorithms</a>
+        <a href="tutorials.html?topic=ml">Machine Learning</a>
+        <a href="tutorials.html?topic=webdev">Web Dev</a>
+      </div>
+      <div class="footer-col">
+        <h5>Levels</h5>
+        <a href="tutorials.html?level=beginner">Beginner</a>
+        <a href="tutorials.html?level=intermediate">Intermediate</a>
+        <a href="tutorials.html?level=advanced">Advanced</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container"><span>© 2025 DataSphere.</span><span>Built for learning.</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

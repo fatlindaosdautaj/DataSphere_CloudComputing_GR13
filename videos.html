@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos — DataSphere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">⬡</span><span>DataSphere</span></a>
+    <div class="nav-links">
+      <a href="tutorials.html" class="nav-link">Tutorials</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="videos.html" class="nav-link" style="background:var(--ink-7);font-weight:500">Videos</a>
+      <a href="books.html" class="nav-link">Books</a>
+      <a href="search.html" class="nav-link nav-search-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="tutorials.html">Tutorials</a>
+    <a href="articles.html">Articles</a>
+    <a href="videos.html">Videos</a>
+    <a href="books.html">Books</a>
+    <a href="search.html">Search</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Video Courses</h1>
+    <p>Curated video content — from short concept explainers to multi-hour project courses.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="content-filters" style="margin-bottom:36px">
+      <button class="filter-btn active" data-group="level">All Levels</button>
+      <button class="filter-btn" data-group="level">Beginner</button>
+      <button class="filter-btn" data-group="level">Intermediate</button>
+      <button class="filter-btn" data-group="level">Advanced</button>
+    </div>
+    <div class="videos-grid">
+
+      <a href="#" class="video-card">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a2a3a,#0d9373)">
+          <div class="play-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+          <span class="video-duration">22 min</span>
+        </div>
+        <div class="video-info">
+          <div class="article-tags"><span class="tag-sm beginner">Beginner</span><span class="tag-sm">Algorithms</span></div>
+          <h4>Sorting Algorithms Visualised</h4>
+          <p>Bubble, merge, quick, and heap sort — animated side by side with live complexity comparisons.</p>
+          <div class="video-meta"><span>Free</span><span>·</span><span>22 min</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="video-card">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a1a2e,#5b4fcf)">
+          <div class="play-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+          <span class="video-duration">2 hr 10 min</span>
+        </div>
+        <div class="video-info">
+          <div class="article-tags"><span class="tag-sm intermediate">Intermediate</span><span class="tag-sm">Web Dev</span></div>
+          <h4>Building REST APIs with FastAPI</h4>
+          <p>A hands-on project: from zero to a deployed, documented API with authentication and tests.</p>
+          <div class="video-meta"><span>Free</span><span>·</span><span>2 hr 10 min</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="video-card">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1c1008,#c47d0e)">
+          <div class="play-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+          <span class="video-duration">1 hr 45 min</span>
+        </div>
+        <div class="video-info">
+          <div class="article-tags"><span class="tag-sm advanced">Advanced</span><span class="tag-sm">Systems</span></div>
+          <h4>Distributed Systems: Core Concepts</h4>
+          <p>CAP theorem, Raft consensus, Paxos, vector clocks, and eventual consistency — clearly explained.</p>
+          <div class="video-meta"><span>Free</span><span>·</span><span>1 hr 45 min</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="video-card">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#0f2a1c,#1d9e75)">
+          <div class="play-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+          <span class="video-duration">3 hr</span>
+        </div>
+        <div class="video-info">
+          <div class="article-tags"><span class="tag-sm beginner">Beginner</span><span class="tag-sm">Web Dev</span></div>
+          <h4>JavaScript Crash Course 2025</h4>
+          <p>Variables, functions, objects, DOM, events, and async/await — the complete JS starter in one sitting.</p>
+          <div class="video-meta"><span>Free</span><span>·</span><span>3 hr</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="video-card">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a0a10,#d04a2a)">
+          <div class="play-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+          <span class="video-duration">55 min</span>
+        </div>
+        <div class="video-info">
+          <div class="article-tags"><span class="tag-sm intermediate">Intermediate</span><span class="tag-sm">ML</span></div>
+          <h4>Neural Networks from Scratch in Python</h4>
+          <p>Build a backpropagating neural net using only NumPy — no frameworks, pure understanding.</p>
+          <div class="video-meta"><span>Free</span><span>·</span><span>55 min</span></div>
+        </div>
+      </a>
+
+      <a href="#" class="video-card">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#0a0f1a,#1a6eb5)">
+          <div class="play-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg></div>
+          <span class="video-duration">4 hr 30 min</span>
+        </div>
+        <div class="video-info">
+          <div class="article-tags"><span class="tag-sm intermediate">Intermediate</span><span class="tag-sm">Databases</span></div>
+          <h4>PostgreSQL: The Complete Guide</h4>
+          <p>Schema design, indexes, transactions, window functions, full-text search, and performance tuning.</p>
+          <div class="video-meta"><span>Free</span><span>·</span><span>4 hr 30 min</span></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">⬡ DataSphere</div>
+      <p>A curated computer science learning hub. Hosted on Azure Static Web Apps.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Content</h5>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="articles.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="books.html">Books</a>
+      </div>
+      <div class="footer-col">
+        <h5>Topics</h5>
+        <a href="tutorials.html?topic=algorithms">Algorithms</a>
+        <a href="tutorials.html?topic=ml">Machine Learning</a>
+        <a href="tutorials.html?topic=webdev">Web Dev</a>
+      </div>
+      <div class="footer-col">
+        <h5>Levels</h5>
+        <a href="tutorials.html?level=beginner">Beginner</a>
+        <a href="tutorials.html?level=intermediate">Intermediate</a>
+        <a href="tutorials.html?level=advanced">Advanced</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container"><span>© 2025 DataSphere.</span><span>Built for learning.</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
