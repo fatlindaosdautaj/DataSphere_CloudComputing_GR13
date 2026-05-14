@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles — DataSphere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">⬡</span><span>DataSphere</span></a>
+    <div class="nav-links">
+      <a href="tutorials.html" class="nav-link">Tutorials</a>
+      <a href="articles.html" class="nav-link" style="background:var(--ink-7);font-weight:500">Articles</a>
+      <a href="videos.html" class="nav-link">Videos</a>
+      <a href="books.html" class="nav-link">Books</a>
+      <a href="search.html" class="nav-link nav-search-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="tutorials.html">Tutorials</a>
+    <a href="articles.html">Articles</a>
+    <a href="videos.html">Videos</a>
+    <a href="books.html">Books</a>
+    <a href="search.html">Search</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Articles</h1>
+    <p>In-depth explorations of CS concepts, architecture patterns, and technical deep-dives.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="content-filters" style="margin-bottom:8px">
+      <button class="filter-btn active" data-group="level">All</button>
+      <button class="filter-btn" data-group="level">Beginner</button>
+      <button class="filter-btn" data-group="level">Intermediate</button>
+      <button class="filter-btn" data-group="level">Advanced</button>
+    </div>
+    <div class="articles-list" style="margin-top:16px">
+
+      <article class="article-row">
+        <div class="article-date">May 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Machine Learning</span><span class="tag-sm advanced">Advanced</span></div>
+          <h4><a href="#">Attention Mechanisms: From Theory to Transformers</a></h4>
+          <p>A deep dive into how attention is computed, why it works, and the architectural decisions behind modern LLMs. Includes full mathematical derivations.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Apr 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Systems</span><span class="tag-sm intermediate">Intermediate</span></div>
+          <h4><a href="#">The Anatomy of a TCP Connection</a></h4>
+          <p>Everything from the three-way handshake to TIME_WAIT — demystified with annotated packet traces and practical Wireshark examples.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Apr 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Databases</span><span class="tag-sm intermediate">Intermediate</span></div>
+          <h4><a href="#">Why Your Postgres Queries Are Slow (and How to Fix Them)</a></h4>
+          <p>EXPLAIN ANALYZE, index selection, join order, vacuuming, and connection pooling — the practical guide to PostgreSQL performance.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Mar 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Algorithms</span><span class="tag-sm beginner">Beginner</span></div>
+          <h4><a href="#">Recursion Demystified: Thinking in Subproblems</a></h4>
+          <p>A clear, visual introduction to recursion — no mysterious call stacks, just elegant problem decomposition with worked examples.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Mar 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Machine Learning</span><span class="tag-sm intermediate">Intermediate</span></div>
+          <h4><a href="#">How Vector Databases Work</a></h4>
+          <p>The architecture behind semantic search: embedding spaces, HNSW indexing, approximate nearest-neighbour search, and when to use them.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Feb 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Security</span><span class="tag-sm advanced">Advanced</span></div>
+          <h4><a href="#">Modern TLS: Every Handshake Byte Explained</a></h4>
+          <p>Walk through a TLS 1.3 handshake packet-by-packet. Understand ECDHE key exchange, certificate validation, and the cryptographic guarantees behind HTTPS.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Feb 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Web Dev</span><span class="tag-sm intermediate">Intermediate</span></div>
+          <h4><a href="#">The Event Loop, Explained Properly</a></h4>
+          <p>Why JavaScript is single-threaded, how the call stack, task queue, and microtask queue interact, and what this means for your async code.</p>
+        </div>
+      </article>
+
+      <article class="article-row">
+        <div class="article-date">Jan 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Systems</span><span class="tag-sm advanced">Advanced</span></div>
+          <h4><a href="#">Memory Allocators: How malloc Works</a></h4>
+          <p>From sbrk to free lists to buddy systems and jemalloc — a tour of how heap memory allocation is actually implemented.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">⬡ DataSphere</div>
+      <p>A curated computer science learning hub. Hosted on Azure Static Web Apps.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Content</h5>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="articles.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="books.html">Books</a>
+      </div>
+      <div class="footer-col">
+        <h5>Topics</h5>
+        <a href="tutorials.html?topic=algorithms">Algorithms</a>
+        <a href="tutorials.html?topic=ml">Machine Learning</a>
+        <a href="tutorials.html?topic=webdev">Web Dev</a>
+      </div>
+      <div class="footer-col">
+        <h5>Levels</h5>
+        <a href="tutorials.html?level=beginner">Beginner</a>
+        <a href="tutorials.html?level=intermediate">Intermediate</a>
+        <a href="tutorials.html?level=advanced">Advanced</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container"><span>© 2025 DataSphere.</span><span>Built for learning.</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
