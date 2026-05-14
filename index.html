@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataSphere — Computer Science Learning Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span>DataSphere</span>
+    </a>
+    <div class="nav-links">
+      <a href="tutorials.html" class="nav-link">Tutorials</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="videos.html" class="nav-link">Videos</a>
+      <a href="books.html" class="nav-link">Books</a>
+      <a href="search.html" class="nav-link nav-search-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="tutorials.html">Tutorials</a>
+    <a href="articles.html">Articles</a>
+    <a href="videos.html">Videos</a>
+    <a href="books.html">Books</a>
+    <a href="search.html">Search</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container">
+    <div class="hero-label">Computer Science Resource Center</div>
+    <h1 class="hero-title">Master the Art<br><em>of Computing</em></h1>
+    <p class="hero-sub">Curated tutorials, articles, videos, and books across every level — from curious beginner to practising engineer.</p>
+    <div class="hero-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search topics, concepts, technologies…" id="heroSearch" autocomplete="off">
+      <button onclick="doSearch()">Search</button>
+    </div>
+    <div class="hero-tags">
+      <a href="tutorials.html?topic=algorithms" class="tag">Algorithms</a>
+      <a href="tutorials.html?topic=ml" class="tag">Machine Learning</a>
+      <a href="tutorials.html?topic=webdev" class="tag">Web Development</a>
+      <a href="tutorials.html?topic=systems" class="tag">Systems</a>
+      <a href="tutorials.html?topic=databases" class="tag">Databases</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="container stats-inner">
+    <div class="stat"><span class="stat-num">240+</span><span class="stat-label">Tutorials</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">180+</span><span class="stat-label">Articles</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">95+</span><span class="stat-label">Video Courses</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">60+</span><span class="stat-label">Curated Books</span></div>
+  </div>
+</div>
+
+<!-- Difficulty Filter -->
+<section class="section" id="browse">
+  <div class="container">
+    <div class="section-header">
+      <h2>Browse by Level</h2>
+      <p>Find resources perfectly matched to where you are in your learning journey.</p>
+    </div>
+    <div class="level-cards">
+      <a href="tutorials.html?level=beginner" class="level-card level-beginner">
+        <div class="level-icon">○</div>
+        <h3>Beginner</h3>
+        <p>No prior experience needed. Start with fundamentals, logic, and core concepts.</p>
+        <div class="level-count">82 resources</div>
+      </a>
+      <a href="tutorials.html?level=intermediate" class="level-card level-intermediate">
+        <div class="level-icon">◐</div>
+        <h3>Intermediate</h3>
+        <p>Comfortable with basics? Dive into data structures, algorithms, and frameworks.</p>
+        <div class="level-count">124 resources</div>
+      </a>
+      <a href="tutorials.html?level=advanced" class="level-card level-advanced">
+        <div class="level-icon">●</div>
+        <h3>Advanced</h3>
+        <p>Push your boundaries with distributed systems, compilers, and research papers.</p>
+        <div class="level-count">68 resources</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Topic Grid -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Explore Topics</h2>
+      <p>Deep dives into every major area of computer science.</p>
+    </div>
+    <div class="topic-grid">
+      <a href="tutorials.html?topic=algorithms" class="topic-card">
+        <div class="topic-icon tc-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Algorithms & Data Structures</h3>
+        <p>Sorting, graphs, dynamic programming, trees, and complexity analysis.</p>
+        <span class="topic-arrow">→</span>
+      </a>
+      <a href="tutorials.html?topic=ml" class="topic-card">
+        <div class="topic-icon tc-purple">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 6l4 4M14 14l4 4M6 18l4-4M14 10l4-4"/></svg>
+        </div>
+        <h3>Machine Learning & AI</h3>
+        <p>Neural networks, NLP, computer vision, reinforcement learning.</p>
+        <span class="topic-arrow">→</span>
+      </a>
+      <a href="tutorials.html?topic=webdev" class="topic-card">
+        <div class="topic-icon tc-teal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m9 8 3 3-3 3"/><path d="M13 14h3"/></svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, React, Node.js, REST APIs, and full-stack patterns.</p>
+        <span class="topic-arrow">→</span>
+      </a>
+      <a href="tutorials.html?topic=systems" class="topic-card">
+        <div class="topic-icon tc-amber">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+        </div>
+        <h3>Systems & OS</h3>
+        <p>Operating systems, memory management, concurrency, and low-level programming.</p>
+        <span class="topic-arrow">→</span>
+      </a>
+      <a href="tutorials.html?topic=databases" class="topic-card">
+        <div class="topic-icon tc-coral">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <h3>Databases</h3>
+        <p>SQL, NoSQL, indexing, transactions, query optimization, and schema design.</p>
+        <span class="topic-arrow">→</span>
+      </a>
+      <a href="tutorials.html?topic=security" class="topic-card">
+        <div class="topic-icon tc-red">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Security & Cryptography</h3>
+        <p>Encryption, authentication, secure coding, penetration testing basics.</p>
+        <span class="topic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Content -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured This Week</h2>
+      <p>Hand-picked highlights across formats.</p>
+    </div>
+    <div class="featured-grid">
+      <!-- Tutorial featured -->
+      <div class="featured-main">
+        <div class="featured-type tutorial-badge">Tutorial</div>
+        <div class="featured-level beginner-badge">Beginner</div>
+        <h3>A Gentle Introduction to Big-O Notation</h3>
+        <p>Understand how to measure the efficiency of algorithms and why it matters for writing fast, scalable code. Includes interactive visualisations and exercises.</p>
+        <div class="featured-meta">
+          <span>⏱ 45 min</span>
+          <span>·</span>
+          <span>Algorithms</span>
+        </div>
+        <a href="tutorials.html" class="btn-primary">Read Tutorial →</a>
+      </div>
+      <div class="featured-side">
+        <div class="side-card">
+          <div class="side-type article-badge">Article</div>
+          <h4>How Vector Databases Work</h4>
+          <p>The architecture behind semantic search and embedding stores.</p>
+          <a href="articles.html" class="text-link">Read →</a>
+        </div>
+        <div class="side-card">
+          <div class="side-type video-badge">Video</div>
+          <h4>Building REST APIs with FastAPI</h4>
+          <p>A 2-hour hands-on project tutorial — from zero to deployed.</p>
+          <a href="videos.html" class="text-link">Watch →</a>
+        </div>
+        <div class="side-card">
+          <div class="side-type book-badge">Book</div>
+          <h4>Designing Data-Intensive Applications</h4>
+          <p>Martin Kleppmann's definitive guide — our top pick for 2025.</p>
+          <a href="books.html" class="text-link">View →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Learning Paths -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header light">
+      <h2>Learning Paths</h2>
+      <p>Structured journeys from concept to competency.</p>
+    </div>
+    <div class="paths-grid">
+      <div class="path-card">
+        <div class="path-num">01</div>
+        <h3>Foundations of CS</h3>
+        <p>Logic, binary, data types, control flow, functions — the bedrock every developer needs.</p>
+        <div class="path-steps">
+          <span>12 tutorials</span> · <span>~8 hours</span>
+        </div>
+        <a href="tutorials.html?path=foundations" class="path-btn">Start Path →</a>
+      </div>
+      <div class="path-card">
+        <div class="path-num">02</div>
+        <h3>Full-Stack Web Dev</h3>
+        <p>From HTML basics to deploying a production-ready application with databases and auth.</p>
+        <div class="path-steps">
+          <span>24 tutorials</span> · <span>~30 hours</span>
+        </div>
+        <a href="tutorials.html?path=fullstack" class="path-btn">Start Path →</a>
+      </div>
+      <div class="path-card">
+        <div class="path-num">03</div>
+        <h3>ML Engineering</h3>
+        <p>Linear algebra, Python for ML, scikit-learn, PyTorch, model deployment and monitoring.</p>
+        <div class="path-steps">
+          <span>20 tutorials</span> · <span>~40 hours</span>
+        </div>
+        <a href="tutorials.html?path=ml" class="path-btn">Start Path →</a>
+      </div>
+      <div class="path-card">
+        <div class="path-num">04</div>
+        <h3>Systems Programming</h3>
+        <p>C, memory, the kernel, networking, concurrency — for those who want to go deep.</p>
+        <div class="path-steps">
+          <span>18 tutorials</span> · <span>~25 hours</span>
+        </div>
+        <a href="tutorials.html?path=systems" class="path-btn">Start Path →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Articles -->
+<section class="section">
+  <div class="container">
+    <div class="section-header-row">
+      <h2>Recent Articles</h2>
+      <a href="articles.html" class="view-all">View all →</a>
+    </div>
+    <div class="articles-list">
+      <article class="article-row">
+        <div class="article-date">May 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Machine Learning</span><span class="tag-sm advanced">Advanced</span></div>
+          <h4><a href="articles.html">Attention Mechanisms: From Theory to Transformers</a></h4>
+          <p>A deep dive into how attention is computed, why it works, and the architectural decisions behind modern LLMs.</p>
+        </div>
+      </article>
+      <article class="article-row">
+        <div class="article-date">Apr 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Systems</span><span class="tag-sm intermediate">Intermediate</span></div>
+          <h4><a href="articles.html">The Anatomy of a TCP Connection</a></h4>
+          <p>Everything from the three-way handshake to TIME_WAIT — demystified with annotated packet traces.</p>
+        </div>
+      </article>
+      <article class="article-row">
+        <div class="article-date">Apr 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Databases</span><span class="tag-sm intermediate">Intermediate</span></div>
+          <h4><a href="articles.html">Why Your Postgres Queries Are Slow (and How to Fix Them)</a></h4>
+          <p>EXPLAIN ANALYZE, index selection, join strategies, and vacuuming — the practical performance guide.</p>
+        </div>
+      </article>
+      <article class="article-row">
+        <div class="article-date">Mar 2025</div>
+        <div class="article-body">
+          <div class="article-tags"><span class="tag-sm">Algorithms</span><span class="tag-sm beginner">Beginner</span></div>
+          <h4><a href="articles.html">Recursion Demystified: Thinking in Subproblems</a></h4>
+          <p>A clear, visual introduction to recursion — no mysterious call stacks, just elegant problem decomposition.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">⬡ DataSphere</div>
+      <p>A curated computer science learning hub. Hosted on Azure Static Web Apps.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Content</h5>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="articles.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="books.html">Books</a>
+      </div>
+      <div class="footer-col">
+        <h5>Topics</h5>
+        <a href="tutorials.html?topic=algorithms">Algorithms</a>
+        <a href="tutorials.html?topic=ml">Machine Learning</a>
+        <a href="tutorials.html?topic=webdev">Web Dev</a>
+        <a href="tutorials.html?topic=systems">Systems</a>
+      </div>
+      <div class="footer-col">
+        <h5>Levels</h5>
+        <a href="tutorials.html?level=beginner">Beginner</a>
+        <a href="tutorials.html?level=intermediate">Intermediate</a>
+        <a href="tutorials.html?level=advanced">Advanced</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2025 DataSphere. Hosted on Azure Blob Storage.</span>
+      <span>Built for learning.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
