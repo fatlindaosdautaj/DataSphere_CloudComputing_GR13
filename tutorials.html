@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorials — DataSphere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">⬡</span><span>DataSphere</span></a>
+    <div class="nav-links">
+      <a href="tutorials.html" class="nav-link" style="background:var(--ink-7);font-weight:500">Tutorials</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="videos.html" class="nav-link">Videos</a>
+      <a href="books.html" class="nav-link">Books</a>
+      <a href="search.html" class="nav-link nav-search-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="tutorials.html">Tutorials</a>
+    <a href="articles.html">Articles</a>
+    <a href="videos.html">Videos</a>
+    <a href="books.html">Books</a>
+    <a href="search.html">Search</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Tutorials</h1>
+    <p>Step-by-step guides from beginner concepts to expert implementations.</p>
+  </div>
+</div>
+
+<div class="container tutorials-layout" id="tutorialsGrid">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-group">
+      <h4>Level</h4>
+      <a href="tutorials.html?level=all" class="active">All Levels</a>
+      <a href="tutorials.html?level=beginner">Beginner</a>
+      <a href="tutorials.html?level=intermediate">Intermediate</a>
+      <a href="tutorials.html?level=advanced">Advanced</a>
+    </div>
+    <div class="sidebar-group">
+      <h4>Topic</h4>
+      <a href="tutorials.html?topic=algorithms">Algorithms & Data Structures</a>
+      <a href="tutorials.html?topic=ml">Machine Learning & AI</a>
+      <a href="tutorials.html?topic=webdev">Web Development</a>
+      <a href="tutorials.html?topic=systems">Systems & OS</a>
+      <a href="tutorials.html?topic=databases">Databases</a>
+      <a href="tutorials.html?topic=security">Security</a>
+    </div>
+    <div class="sidebar-group">
+      <h4>Learning Paths</h4>
+      <a href="tutorials.html?path=foundations">CS Foundations</a>
+      <a href="tutorials.html?path=fullstack">Full-Stack Web Dev</a>
+      <a href="tutorials.html?path=ml">ML Engineering</a>
+      <a href="tutorials.html?path=systems">Systems Programming</a>
+    </div>
+  </aside>
+
+  <!-- Content -->
+  <main>
+    <div class="content-filters">
+      <button class="filter-btn active" data-group="level">All</button>
+      <button class="filter-btn" data-group="level">Beginner</button>
+      <button class="filter-btn" data-group="level">Intermediate</button>
+      <button class="filter-btn" data-group="level">Advanced</button>
+    </div>
+
+    <div class="tutorials-grid">
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm beginner">Beginner</span>
+          <span class="tag-sm">Algorithms</span>
+        </div>
+        <h3>Big-O Notation: A Gentle Introduction</h3>
+        <p>Learn to measure the efficiency of algorithms — time complexity, space complexity, and asymptotic notation explained from first principles.</p>
+        <div class="tutorial-card-footer">
+          <span>45 min</span>
+          <span>·</span>
+          <span>12 exercises</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm beginner">Beginner</span>
+          <span class="tag-sm">Web Dev</span>
+        </div>
+        <h3>HTML & CSS Fundamentals</h3>
+        <p>Build your first webpage from scratch. Document structure, selectors, the box model, Flexbox, and responsive layouts.</p>
+        <div class="tutorial-card-footer">
+          <span>2 hr</span>
+          <span>·</span>
+          <span>8 projects</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm intermediate">Intermediate</span>
+          <span class="tag-sm">Algorithms</span>
+        </div>
+        <h3>Graph Algorithms: BFS and DFS</h3>
+        <p>Traverse and search graphs with breadth-first and depth-first techniques. Includes maze solving, cycle detection, and topological sort.</p>
+        <div class="tutorial-card-footer">
+          <span>1.5 hr</span>
+          <span>·</span>
+          <span>10 exercises</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm intermediate">Intermediate</span>
+          <span class="tag-sm">Web Dev</span>
+        </div>
+        <h3>React Hooks Deep Dive</h3>
+        <p>Master useState, useEffect, useContext, useReducer, and custom hooks with real-world patterns and pitfalls to avoid.</p>
+        <div class="tutorial-card-footer">
+          <span>2.5 hr</span>
+          <span>·</span>
+          <span>6 mini-projects</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm intermediate">Intermediate</span>
+          <span class="tag-sm">Databases</span>
+        </div>
+        <h3>SQL Joins Explained Visually</h3>
+        <p>Inner, outer, left, right, and cross joins — visualised with Venn diagrams and hands-on examples using a realistic dataset.</p>
+        <div class="tutorial-card-footer">
+          <span>1 hr</span>
+          <span>·</span>
+          <span>15 queries</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm beginner">Beginner</span>
+          <span class="tag-sm">ML</span>
+        </div>
+        <h3>Python for Data Science Crash Course</h3>
+        <p>NumPy arrays, Pandas DataFrames, and Matplotlib plots — the complete starter toolkit for data analysis and machine learning.</p>
+        <div class="tutorial-card-footer">
+          <span>2 hr</span>
+          <span>·</span>
+          <span>5 notebooks</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm advanced">Advanced</span>
+          <span class="tag-sm">Systems</span>
+        </div>
+        <h3>Writing a Lock-Free Queue in C++</h3>
+        <p>Understand atomic operations, memory ordering models, and ABA problems through a practical lock-free data structure implementation.</p>
+        <div class="tutorial-card-footer">
+          <span>3 hr</span>
+          <span>·</span>
+          <span>4 implementations</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm advanced">Advanced</span>
+          <span class="tag-sm">ML</span>
+        </div>
+        <h3>Implementing a Transformer from Scratch</h3>
+        <p>Build multi-head attention, positional encodings, and the full encoder-decoder stack in pure PyTorch — no pretrained shortcuts.</p>
+        <div class="tutorial-card-footer">
+          <span>5 hr</span>
+          <span>·</span>
+          <span>3 checkpoints</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm intermediate">Intermediate</span>
+          <span class="tag-sm">Algorithms</span>
+        </div>
+        <h3>Dynamic Programming: Patterns and Intuition</h3>
+        <p>Top-down vs bottom-up, overlapping subproblems, optimal substructure — with 20 classic DP problems fully solved.</p>
+        <div class="tutorial-card-footer">
+          <span>3 hr</span>
+          <span>·</span>
+          <span>20 problems</span>
+        </div>
+      </a>
+
+      <a href="#" class="tutorial-card">
+        <div class="tutorial-card-meta">
+          <span class="tag-sm beginner">Beginner</span>
+          <span class="tag-sm">Web Dev</span>
+        </div>
+        <h3>JavaScript Fundamentals for Beginners</h3>
+        <p>Variables, functions, objects, arrays, DOM manipulation, event listeners, and modern ES6+ syntax — no prior coding needed.</p>
+        <div class="tutorial-card-footer">
+          <span>4 hr</span>
+          <span>·</span>
+          <span>20 exercises</span>
+        </div>
+      </a>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">⬡ DataSphere</div>
+      <p>A curated computer science learning hub. Hosted on Azure Static Web Apps.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Content</h5>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="articles.html">Articles</a>
+        <a href="videos.html">Videos</a>
+        <a href="books.html">Books</a>
+      </div>
+      <div class="footer-col">
+        <h5>Topics</h5>
+        <a href="tutorials.html?topic=algorithms">Algorithms</a>
+        <a href="tutorials.html?topic=ml">Machine Learning</a>
+        <a href="tutorials.html?topic=webdev">Web Dev</a>
+        <a href="tutorials.html?topic=systems">Systems</a>
+      </div>
+      <div class="footer-col">
+        <h5>Levels</h5>
+        <a href="tutorials.html?level=beginner">Beginner</a>
+        <a href="tutorials.html?level=intermediate">Intermediate</a>
+        <a href="tutorials.html?level=advanced">Advanced</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container"><span>© 2025 DataSphere.</span><span>Built for learning.</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
